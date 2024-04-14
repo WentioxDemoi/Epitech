@@ -1,0 +1,56 @@
+<!-- Navbar -->
+<mat-toolbar color="primary">
+  <button style="text-align: center;" mat-button routerLink="/dashboard">Area</button>
+  <div class="space_button_service">
+      <button mat-button routerLink="/service">Service</button>
+  </div>
+  <div class="space_button_create">
+      <button mat-button (click)="createPage()">Create</button>
+  </div>
+  <ul>
+      <button *ngIf="numberAction > 0" mat-button routerLink="/action1">First</button>
+      <button *ngIf="numberAction > 1" mat-button routerLink="/action2">Second</button>
+      <button *ngIf="numberAction > 2" mat-button routerLink="/action3">Third</button>
+      <button *ngIf="numberAction > 3" mat-button routerLink="/action4">Fourth</button>
+  </ul>
+  <div class="aboutJson_btn">
+    <button mat-button routerLink="/about.json">AboutJson</button>
+</div>
+</mat-toolbar>
+<!-- !Navbar -->
+
+<!-- !Navbar -->
+
+<div class="grid-container">
+    <h1 class="mat-h1">S E R V I C E</h1>
+    <mat-grid-list cols="2" rowHeight="350px" style="margin-top: 3%">
+      <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+        <mat-card class="dashboard-card">
+            <mat-card-title class="mat-card-header">
+              {{ card.title }}
+            </mat-card-title>
+            <div class="{{ card.name }}">
+              <img [src]="card.image" alt="">
+            </div>
+            <div class="mts">
+                <div *ngIf="card.name != 'timer'" else btnOffOnT>
+                  <mat-slide-toggle name="reaction1" [(ngModel)]="card.status" (change)="updateService(card.title, card.status)">
+                  <div class="btnOffOn">
+                    Off / On
+                  </div>
+                </mat-slide-toggle>
+                </div>
+                <div *ngIf="card.name === 'timer'">
+                  <div class="btnOffOnT">
+                    <mat-slide-toggle name="reaction1" [(ngModel)]="card.status" (change)="updateService(card.title, card.status)">
+                    Off / On
+                    </mat-slide-toggle>
+                  </div>
+                </div>
+            </div>
+          <mat-card-content class="dashboard-card-content">
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>

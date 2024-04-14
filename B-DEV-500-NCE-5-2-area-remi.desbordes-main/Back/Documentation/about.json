@@ -1,0 +1,113 @@
+{
+    "client": {
+      "host": "REPLACEBYID"
+    },
+    "server": {
+      "current_time": "REPLACEBYTIME",
+      "services": [
+        {
+          "name": "OpenWeather",
+          "actions": [
+            {
+              "name": "Coordonate's actual temperature reaches a certain value",
+              "description": "The temperature reaches a value set by the user"
+            },
+            {
+              "name": "Coordonate's minimum temperature today reaches a certain value",
+              "description": "The maximum temperature reaches a value set by the user"
+            },
+            {
+              "name": "Coordonate's maximum temperature today reaches a certain value",
+              "description": "The maximum temperature reaches a value set by the user"
+            },
+            {
+              "name": "Coordonate's actual pressure reaches a certain value",
+              "description": "The pressure reaches a value set by the user"
+            },
+            {
+              "name": "Coordonate's actual humidity reaches a certain value",
+              "description": "The temperature reaches a value set by the user"
+            },
+            {
+              "name": "Coordonate's actual seal level is of a certain value",
+              "description": "The sea level is equal to a value set by the user"
+            },
+            {
+              "name": "Coordonate's actual ground level is of a certain value",
+              "description": "The ground level is equal to a value set by the user"
+            },
+            {
+              "name": "Coordonate's actual feels like temperature reaches a certain value",
+              "description": "The feels like temperature reaches a value set by the user"
+            }
+          ],
+          "reactions": [
+            
+          ]
+        },
+        {
+          "name": "Github",
+          "actions": [
+            {
+              "name": "A new repository is created in the Application's organization",
+              "description": "A new repository is created in the Application's organization"
+            },
+            {
+              "name": "A repository is deleted in the Application's organization",
+              "description": "A repository is deleted in the Application's organization"
+            }
+          ],
+          "reactions": [
+            {
+              "name": "Create a new repository with a certain name in the Application's GitHub account",
+              "description": "Create a new repository with a certain name in the Application's GitHub account"
+            },
+            {
+              "name": "Delete a repository with a certain name in the Application's GitHub account",
+              "description": "Delete a repository with a certain name in the Application's GitHub account"
+            },
+            {
+              "name": "Create a new branch in the Application's repository",
+              "description": "Create a new branch in the Application's repository"
+            },
+            {
+              "name": "Delete a branch in the Application's repository",
+              "description": "Delete a branch in the Application's repository"
+            }
+          ]
+        },
+        {
+          "name": "Chuck Norris",
+          "actions": [
+            
+          ],
+          "reactions": [
+            
+          ]
+        },
+        {
+          "name": "Spring Boot Mail",
+          "actions": [
+            
+          ],
+          "reactions": [
+            {
+              "name": "Send a Chuck Norris joke",
+              "description": "Send an email with a Chuck Norris joke using the Chuck Norris API"
+            }
+          ]
+        },
+        {
+          "name": "Timer",
+          "actions": [
+            {
+              "name": "The actual minute is a multiple of 5",
+              "description": "The actual minute is a multiple of 5"
+            }
+
+            ],
+            "reactions": [{
+            }]
+        }]
+    }
+}
