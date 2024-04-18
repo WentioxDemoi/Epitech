@@ -1,0 +1,7 @@
+How to PlAy?
+BACK
+Z: Move ForwArd
+S: Move BAckwArd
+Q: Move Left
+D: Move Right
+SPACE: PlAce Bomb

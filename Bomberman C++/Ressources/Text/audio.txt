@@ -1,0 +1,7 @@
+Audio Option
+On
+Off
+BACK
+Music:
+Music Volume:
+Effects Volume:
