@@ -1,0 +1,17 @@
+FROM maven:3.9.0-eclipse-temurin-17-alpine
+
+RUN apk add --no-cache bash
+
+SHELL ["/bin/bash", "-c"]
+
+COPY . /app
+
+WORKDIR /app
+
+RUN mvn package -f app/pom.xml
+
+RUN mv app/target/app.jar ./app.jar
+
+RUN find . -not -name app.jar -delete
+
+CMD ["java", "-jar", "app.jar"]
