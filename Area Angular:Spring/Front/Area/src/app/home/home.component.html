@@ -1,0 +1,13 @@
+<div class="main-div">
+    <mat-card>
+        <mat-card-content>
+            <h2 color="primary"> Welcome ! </h2>
+          <form #loginForm="ngForm" (ngSubmit)="loginPage()">
+            <button mat-raised-button color="primary" type="submit"> Login</button>
+          </form>
+          <form #loginForm="ngForm" (ngSubmit)="registerPage()">
+            <button mat-raised-button color="primary" type="submit"> signin</button>
+          </form>
+        </mat-card-content>
+      </mat-card>
+</div>

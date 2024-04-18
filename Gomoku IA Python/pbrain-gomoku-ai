@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+
+from Src.gomoku import Gomoku
+
+def main():
+    gomoku = Gomoku()
+    gomoku.loop()
+
+if __name__ == "__main__":
+    main()

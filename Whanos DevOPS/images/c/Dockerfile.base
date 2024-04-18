@@ -1,0 +1,13 @@
+FROM gcc:11.2
+
+SHELL ["/bin/bash", "-c"]
+
+ONBUILD COPY . /app
+
+ONBUILD WORKDIR /app
+
+ONBUILD RUN make
+
+ONBUILD RUN find . -not -name compiled-app -delete
+
+ONBUILD CMD ["./compiled-app"]

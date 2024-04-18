@@ -1,0 +1,1 @@
+cd /Users/kingdotcom777/Documents/Epitech/Projets/Actual/Area/B-DEV-500-NCE-5-2-area-aeryn.de-carvalho/Back/area ; /usr/bin/env /Users/kingdotcom777/.vscode/extensions/redhat.java-1.15.0-darwin-arm64/jre/17.0.6-macosx-aarch64/bin/java @/var/folders/n7/3vb2jt6d7250tsxn5c6bjcwr0000gn/T/cp_dgcl7xpvq8p6hi94zlevvqo6n.argfile com.Area.AreaApplication
